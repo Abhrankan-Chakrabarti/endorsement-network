@@ -1,0 +1,45 @@
+# _config.yml
+
+# Site settings
+title: Endorsement Network
+description: A MERN-stack self-healing endorsement network that models trust, incentives, penalties, and real-time network health visualization.
+baseurl: "" # leave empty unless deploying under a subpath
+url: "https://abhrankan-chakrabarti.github.io/endorsement-network"
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-primer
+
+# Exclude directories/files from the build
+exclude:
+  - node_modules
+  - backend/node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Plugins (GitHub Pages supports only whitelisted ones)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# Pagination (optional)
+paginate: 5
+paginate_path: "/page:num"
+
+# Defaults (optional)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Abhrankan"
